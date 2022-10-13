@@ -24,8 +24,11 @@
 /* media query for desktop */
 /* Primary Colors */
 /* Secondary Colors */
-.nav {
+.nav-container {
   background-color: #323232;
+}
+
+.nav {
   display: flex;
   align-items: center;
 }
@@ -39,14 +42,15 @@
   .nav {
     justify-content: flex-start;
     line-height: 16rem;
-    padding: 0 9rem 0 9rem;
+    margin: 0 9rem 0 9rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .nav {
     justify-content: flex-start;
     line-height: 20rem;
-    padding: 0 12rem 0 12rem;
+    margin: 0 12rem 0 12rem;
+    max-width: 320rem;
   }
 }
 .nav__logo {
@@ -61,8 +65,6 @@
 }
 @media only screen and (min-width: 768px) {
   .nav__logo {
-    margin: 0;
-    padding: 0;
     margin-right: 16rem;
   }
 }
