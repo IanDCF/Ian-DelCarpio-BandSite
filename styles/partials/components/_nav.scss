@@ -1,0 +1,56 @@
+@use "../fonts" as font;
+@use "../breakpoints" as bp;
+@use "../colors" as color;
+
+.nav {
+  background-color: color.$bandsite-black;
+  display: flex;
+
+  @include bp.mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    color: color.$white;
+
+    @include bp.mobile {
+      padding: 4rem 4rem 2rem 4rem;
+      font-size: 8rem;
+      font-weight: 400;
+    }
+  }
+
+  &__links {
+    list-style-type: none;
+    display: flex;
+
+    @include bp.mobile {
+      margin: 0;
+      padding: 0;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__links-item {
+    color: color.$mercury;
+
+    @include bp.mobile {
+      font-size: 4rem;
+      padding-bottom: 3rem;
+      width: 50vw;
+      text-align: center;
+    }
+  }
+
+  &__links-item--active {
+    color: color.$white;
+
+    @include bp.mobile {
+      font-weight: 600;
+      border-bottom: 1rem solid color.$white;
+    }
+  }
+}
