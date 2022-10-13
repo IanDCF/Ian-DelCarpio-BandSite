@@ -47,10 +47,11 @@
 }
 @media only screen and (min-width: 1280px) {
   .nav {
+    margin: 0 auto;
+    padding: 0 10rem 0 10rem;
     justify-content: flex-start;
     line-height: 20rem;
-    margin: 0 12rem 0 12rem;
-    max-width: 320rem;
+    max-width: 340rem;
   }
 }
 .nav__logo {
@@ -110,24 +111,8 @@
 }
 .nav__links-item--active {
   color: #ffffff;
-}
-@media only screen and (max-width: 767px) {
-  .nav__links-item--active {
-    font-weight: 600;
-    border-bottom: 1rem solid #ffffff;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .nav__links-item--active {
-    font-weight: 600;
-    border-bottom: 1rem solid #ffffff;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .nav__links-item--active {
-    font-weight: 600;
-    border-bottom: 1rem solid #ffffff;
-  }
+  font-weight: 600;
+  border-bottom: 1rem solid #ffffff;
 }
 
 header {

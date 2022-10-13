@@ -22,10 +22,11 @@
   }
 
   @include bp.desktop {
+    margin: 0 auto;
+    padding: 0 10rem 0 10rem;
     justify-content: flex-start;
     line-height: 20rem;
-    margin: 0 12rem 0 12rem;
-    max-width: 320rem;
+    max-width: 340rem;
   }
 
   &__logo {
@@ -81,20 +82,7 @@
 
   &__links-item--active {
     color: color.$white;
-
-    @include bp.mobile {
-      font-weight: 600;
-      border-bottom: 1rem solid color.$white;
-    }
-
-    @include bp.tablet {
-      font-weight: 600;
-      border-bottom: 1rem solid color.$white;
-    }
-
-    @include bp.desktop {
-      font-weight: 600;
-      border-bottom: 1rem solid color.$white;
-    }
+    font-weight: 600;
+    border-bottom: 1rem solid color.$white;
   }
 }
