@@ -1,23 +1,24 @@
-@use "./partials/components/nav";
+@use "./partials/fonts";
+@use "./partials/components/header";
 @use "./partials/components/hero";
 @use "./partials/components/about";
 @use "./partials/components/gallery";
 @use "./partials/components/footer";
 
-header {
+html,
+body {
+  margin: 0;
+  font-family: "Avenir";
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-main {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
