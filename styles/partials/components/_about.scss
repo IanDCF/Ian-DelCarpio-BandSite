@@ -1,3 +1,158 @@
 @use "../fonts" as font;
 @use "../breakpoints" as bp;
 @use "../colors" as color;
+
+.about-container {
+  color: color.$bandsite-black;
+  background-color: color.$white;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include bp.mobile {
+    margin: 0 4rem 0 4rem;
+  }
+
+  @include bp.tablet {
+    margin: 0 9rem 0 9rem;
+  }
+
+  @include bp.desktop {
+    margin: 0 auto;
+    max-width: 340rem;
+  }
+
+  &__title {
+    @include bp.mobile {
+      margin: 6rem 0 4rem 0;
+      font-size: 8rem;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+
+    @include bp.tablet {
+      margin: 12rem 0 9rem 3rem;
+      font-size: 14rem;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+
+    @include bp.desktop {
+      display: flex;
+      justify-content: flex-start;
+      margin: 12rem 0 9rem 0;
+      padding-left: 10rem;
+      font-size: 14rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @include bp.mobile {
+      margin: 0 0 4rem 0;
+    }
+
+    @include bp.tablet {
+      padding: 0 20rem;
+      margin: 0 0 9rem 0;
+    }
+
+    @include bp.desktop {
+      font-size: 14rem;
+      width: 290rem;
+    }
+  }
+
+  &__quote {
+    margin: 0;
+    width: 100%;
+
+    @include bp.mobile {
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    @include bp.tablet {
+      padding: 0 20rem;
+      font-size: 8rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    @include bp.desktop {
+      margin: 0 auto 9rem auto;
+      font-size: 8rem;
+      width: 290rem;
+    }
+  }
+
+  &__quote-text {
+    @include bp.mobile {
+      margin: 0 0 0.8rem 0;
+    }
+
+    @include bp.tablet {
+      margin: 0 0 4rem 0;
+    }
+  }
+
+  &__quote-author {
+    margin: 0;
+
+    @include bp.tablet {
+      font-size: 6rem;
+    }
+  }
+
+  &__band {
+    width: 100%;
+
+    @include bp.mobile {
+      font-size: 4rem;
+    }
+
+    @include bp.tablet {
+      padding: 0 20rem;
+      font-size: 8rem;
+    }
+
+    @include bp.desktop {
+      margin: 0 auto 9rem auto;
+      font-size: 8rem;
+      width: 290rem;
+    }
+  }
+
+  &__band-title {
+    @include bp.mobile {
+      margin: 6rem 0 4rem 0;
+      font-size: 4rem;
+      font-weight: 600;
+    }
+
+    @include bp.tablet {
+      margin: 12rem 0 9rem 0;
+      font-size: 8rem;
+      font-weight: 600;
+    }
+  }
+
+  &__band-div {
+    @include bp.tablet {
+      font-size: 6rem;
+      display: flex;
+    }
+  }
+
+  &__band-text {
+    @include bp.tablet {
+      margin: 0 8rem 9rem 0;
+    }
+  }
+}

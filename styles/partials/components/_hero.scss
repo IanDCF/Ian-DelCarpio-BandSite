@@ -12,27 +12,30 @@
   display: flex;
   align-items: center;
 
+  @include bp.desktop {
+    justify-content: center;
+    height: 55vw;
+  }
+
   &__title {
     color: color.$white;
+    font-weight: 600;
 
     @include bp.mobile {
       font-size: 8rem;
-      font-weight: 600;
       margin-left: 4rem;
     }
 
     @include bp.tablet {
       font-size: 23rem;
-      font-weight: 600;
       margin-left: 12rem;
     }
 
-    // Must keep header title in line with nav logo when screen width > 1280
     @include bp.desktop {
-      justify-content: center;
+      margin: 0;
+      padding-left: 10rem;
       font-size: 23rem;
-      font-weight: 600;
-      margin-left: 12rem;
+      width: 340rem;
     }
   }
 }
