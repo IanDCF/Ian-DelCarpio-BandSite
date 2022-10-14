@@ -1,3 +1,38 @@
 @use "../fonts" as font;
 @use "../breakpoints" as bp;
 @use "../colors" as color;
+
+.hero {
+  background-image: url("../../../assets/images/hero-bio.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 60vw;
+  // Opacity not working
+  opacity: rgba(50%, 50%, 50%, 50%);
+  display: flex;
+  align-items: center;
+
+  &__title {
+    color: color.$white;
+
+    @include bp.mobile {
+      font-size: 8rem;
+      font-weight: 600;
+      margin-left: 4rem;
+    }
+
+    @include bp.tablet {
+      font-size: 23rem;
+      font-weight: 600;
+      margin-left: 12rem;
+    }
+
+    // Must keep header title in line with nav logo when screen width > 1280
+    @include bp.desktop {
+      justify-content: center;
+      font-size: 23rem;
+      font-weight: 600;
+      margin-left: 12rem;
+    }
+  }
+}
