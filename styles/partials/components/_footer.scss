@@ -1,3 +1,8 @@
 @use "../fonts" as font;
 @use "../breakpoints" as bp;
 @use "../colors" as color;
+
+.footer {
+  background-color: color.$bandsite-black;
+  height: 20vh;
+}

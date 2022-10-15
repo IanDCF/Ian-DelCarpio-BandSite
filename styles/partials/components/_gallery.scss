@@ -2,7 +2,79 @@
 @use "../breakpoints" as bp;
 @use "../colors" as color;
 
-.gallery {
+.gallery-container {
+  margin: 0;
+  display: flex;
+  align-items: center;
   background-color: color.$mercury;
-  height: 30vh;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+
+  @include bp.mobile {
+    margin: 0 4rem;
+  }
+
+  @include bp.tablet {
+    margin: 0 12rem;
+  }
+
+  @include bp.desktop {
+    margin: 0 auto;
+    padding: 0 30rem 0 30rem;
+    max-width: 340rem;
+  }
+}
+
+.gallery__title {
+  color: color.$bandsite-black;
+  @include bp.mobile {
+    margin: 6rem 0 4rem 0;
+    font-size: 8rem;
+    font-weight: 600;
+    align-self: flex-start;
+  }
+
+  @include bp.tablet {
+    margin: 12rem 0 9rem 0;
+    font-size: 14rem;
+    font-weight: 600;
+  }
+
+  @include bp.desktop {
+    margin: 12rem 0 9rem 0;
+    font-size: 11rem;
+  }
+}
+
+.gallery__display {
+  display: flex;
+  @include bp.mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @include bp.tablet {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  @include bp.desktop {
+    margin-bottom: 8rem;
+  }
+}
+
+.gallery__photo {
+  @include bp.mobile {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  @include bp.tablet {
+    width: 32%;
+    margin-bottom: 1.9%;
+  }
 }
