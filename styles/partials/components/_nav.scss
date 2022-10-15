@@ -25,7 +25,7 @@
     margin: 0 auto;
     padding: 0 30rem 0 30rem;
     justify-content: flex-start;
-    line-height: 24rem;
+    line-height: 20rem;
     max-width: 340rem;
   }
 
@@ -44,7 +44,7 @@
     }
 
     @include bp.desktop {
-      font-size: 8rem;
+      font-size: 7rem;
       margin-right: 18rem;
     }
   }
@@ -77,7 +77,7 @@
     }
 
     @include bp.desktop {
-      font-size: 5rem;
+      font-size: 4rem;
       margin-right: 8rem;
     }
   }

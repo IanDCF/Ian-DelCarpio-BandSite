@@ -46,7 +46,7 @@
       justify-content: flex-start;
       margin: 12rem 0 9rem 0;
       padding-left: 30rem;
-      font-size: 14rem;
+      font-size: 11rem;
     }
   }
 
@@ -64,7 +64,7 @@
 
     @include bp.desktop {
       font-size: 14rem;
-      width: 240rem;
+      width: 250rem;
     }
   }
 
@@ -86,9 +86,9 @@
     }
 
     @include bp.desktop {
-      margin: 0 auto 9rem auto;
-      font-size: 8rem;
-      width: 240rem;
+      margin: 0 auto;
+      font-size: 6rem;
+      width: 250rem;
     }
   }
 
@@ -108,6 +108,10 @@
     @include bp.tablet {
       font-size: 6rem;
     }
+
+    @include bp.desktop {
+      font-size: 5rem;
+    }
   }
 
   &__band {
@@ -124,8 +128,8 @@
 
     @include bp.desktop {
       margin: 0 auto;
-      font-size: 8rem;
-      width: 240rem;
+      font-size: 6rem;
+      width: 250rem;
     }
   }
 
@@ -141,6 +145,12 @@
       font-size: 8rem;
       font-weight: 600;
     }
+
+    @include bp.desktop {
+      margin: 12rem 0 9rem 0;
+      font-size: 7rem;
+      font-weight: 600;
+    }
   }
 
   &__band-div {
@@ -148,11 +158,20 @@
       font-size: 6rem;
       display: flex;
     }
+
+    @include bp.desktop {
+      font-size: 4.5rem;
+      display: flex;
+    }
   }
 
   &__band-text {
     @include bp.tablet {
       margin: 0 8rem 9rem 0;
+    }
+
+    @include bp.desktop {
+      margin: 0 6rem 9rem 0;
     }
   }
 }

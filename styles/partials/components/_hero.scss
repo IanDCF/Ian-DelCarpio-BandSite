@@ -14,7 +14,7 @@
 
   @include bp.desktop {
     justify-content: center;
-    height: 55vw;
+    height: 50vw;
   }
 
   &__title {
@@ -34,7 +34,7 @@
     @include bp.desktop {
       margin: 0;
       padding-left: 30rem;
-      font-size: 23rem;
+      font-size: 20rem;
       width: 340rem;
     }
   }
