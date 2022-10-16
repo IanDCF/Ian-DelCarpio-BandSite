@@ -1,0 +1,90 @@
+@use "../fonts" as font;
+@use "../breakpoints" as bp;
+@use "../colors" as color;
+
+.nav-container {
+  background-color: color.$bandsite-black;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  @include bp.mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include bp.tablet {
+    justify-content: flex-start;
+    line-height: 22rem;
+    margin: 0 12rem 0 12rem;
+  }
+
+  @include bp.desktop {
+    margin: 0 auto;
+    padding: 0 30rem 0 30rem;
+    justify-content: flex-start;
+    line-height: 20rem;
+    max-width: 340rem;
+  }
+
+  &__logo {
+    color: color.$white;
+    font-weight: 400;
+
+    @include bp.mobile {
+      font-size: 9rem;
+      padding: 3rem 4rem 3rem 4rem;
+    }
+
+    @include bp.tablet {
+      font-size: 8rem;
+      margin-right: 18rem;
+    }
+
+    @include bp.desktop {
+      font-size: 7rem;
+      margin-right: 18rem;
+    }
+  }
+
+  &__links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+    @include bp.mobile {
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  &__links-item {
+    color: color.$mercury;
+    text-align: center;
+
+    @include bp.mobile {
+      font-size: 4.5rem;
+      padding-bottom: 4rem;
+      width: 50vw;
+    }
+
+    @include bp.tablet {
+      font-size: 4.5rem;
+      margin-right: 16rem;
+    }
+
+    @include bp.desktop {
+      font-size: 4rem;
+      margin-right: 8rem;
+    }
+  }
+
+  &__links-item--active {
+    color: color.$white;
+    font-weight: 600;
+    border-bottom: 1rem solid color.$white;
+  }
+}

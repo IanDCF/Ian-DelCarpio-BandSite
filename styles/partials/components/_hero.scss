@@ -1,0 +1,41 @@
+@use "../fonts" as font;
+@use "../breakpoints" as bp;
+@use "../colors" as color;
+
+.hero {
+  background-image: url("../../../assets/images/hero-bio.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 60vw;
+  // Opacity not working
+  opacity: rgba(50%, 50%, 50%, 50%);
+  display: flex;
+  align-items: center;
+
+  @include bp.desktop {
+    justify-content: center;
+    height: 48vw;
+  }
+
+  &__title {
+    color: color.$white;
+    font-weight: 600;
+
+    @include bp.mobile {
+      font-size: 9rem;
+      margin-left: 4rem;
+    }
+
+    @include bp.tablet {
+      font-size: 20rem;
+      margin-left: 12rem;
+    }
+
+    @include bp.desktop {
+      margin: 0;
+      padding-left: 30rem;
+      font-size: 16rem;
+      width: 340rem;
+    }
+  }
+}

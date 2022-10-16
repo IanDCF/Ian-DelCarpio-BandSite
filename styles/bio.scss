@@ -1,0 +1,20 @@
+@use "./partials/components/nav";
+@use "./partials/components/hero";
+@use "./partials/components/about";
+@use "./partials/components/gallery";
+@use "./partials/components/footer";
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}

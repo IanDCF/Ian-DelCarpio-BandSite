@@ -1,0 +1,25 @@
+@use "./partials/fonts";
+@use "./partials/breakpoints";
+@use "./partials/colors";
+@use "./partials/components/nav";
+@use "./partials/components/hero";
+@use "./partials/components/about";
+@use "./partials/components/gallery";
+@use "./partials/components/footer";
+
+html,
+body {
+  margin: 0;
+  font-family: "Avenir";
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
