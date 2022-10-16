@@ -14,7 +14,7 @@
 
   @include bp.desktop {
     justify-content: center;
-    height: 50vw;
+    height: 48vw;
   }
 
   &__title {
@@ -22,19 +22,19 @@
     font-weight: 600;
 
     @include bp.mobile {
-      font-size: 8rem;
+      font-size: 9rem;
       margin-left: 4rem;
     }
 
     @include bp.tablet {
-      font-size: 23rem;
+      font-size: 20rem;
       margin-left: 12rem;
     }
 
     @include bp.desktop {
       margin: 0;
       padding-left: 30rem;
-      font-size: 20rem;
+      font-size: 16rem;
       width: 340rem;
     }
   }

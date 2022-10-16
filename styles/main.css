@@ -60,8 +60,8 @@
 }
 @media only screen and (max-width: 767px) {
   .nav__logo {
-    font-size: 7rem;
-    padding: 3rem 4rem 2rem 4rem;
+    font-size: 9rem;
+    padding: 3rem 4rem 3rem 4rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -94,14 +94,14 @@
 }
 @media only screen and (max-width: 767px) {
   .nav__links-item {
-    font-size: 4rem;
-    padding-bottom: 3rem;
+    font-size: 4.5rem;
+    padding-bottom: 4rem;
     width: 50vw;
   }
 }
 @media only screen and (min-width: 768px) {
   .nav__links-item {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-right: 16rem;
   }
 }
@@ -129,7 +129,7 @@
 @media only screen and (min-width: 1280px) {
   .hero {
     justify-content: center;
-    height: 50vw;
+    height: 48vw;
   }
 }
 .hero__title {
@@ -138,13 +138,13 @@
 }
 @media only screen and (max-width: 767px) {
   .hero__title {
-    font-size: 8rem;
+    font-size: 9rem;
     margin-left: 4rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero__title {
-    font-size: 23rem;
+    font-size: 20rem;
     margin-left: 12rem;
   }
 }
@@ -152,7 +152,7 @@
   .hero__title {
     margin: 0;
     padding-left: 30rem;
-    font-size: 20rem;
+    font-size: 16rem;
     width: 340rem;
   }
 }
@@ -187,7 +187,7 @@
 @media only screen and (max-width: 767px) {
   .about__title {
     margin: 6rem 0 4rem 0;
-    font-size: 8rem;
+    font-size: 9rem;
     font-weight: 600;
     align-self: flex-start;
   }
@@ -195,7 +195,7 @@
 @media only screen and (min-width: 768px) {
   .about__title {
     margin: 12rem 0 9rem 3rem;
-    font-size: 14rem;
+    font-size: 12rem;
     font-weight: 600;
     align-self: flex-start;
   }
@@ -206,7 +206,7 @@
     justify-content: flex-start;
     margin: 12rem 0 9rem 0;
     padding-left: 30rem;
-    font-size: 11rem;
+    font-size: 10rem;
   }
 }
 .about__image {
@@ -226,7 +226,7 @@
 @media only screen and (min-width: 1280px) {
   .about__image {
     font-size: 14rem;
-    width: 250rem;
+    width: 255rem;
   }
 }
 .about__quote {
@@ -235,7 +235,7 @@
 }
 @media only screen and (max-width: 767px) {
   .about__quote {
-    font-size: 4rem;
+    font-size: 5.5rem;
     font-weight: 600;
     line-height: 1.6;
   }
@@ -243,7 +243,7 @@
 @media only screen and (min-width: 768px) {
   .about__quote {
     padding: 0 20rem;
-    font-size: 8rem;
+    font-size: 7.5rem;
     font-weight: 600;
     line-height: 1.5;
   }
@@ -251,13 +251,13 @@
 @media only screen and (min-width: 1280px) {
   .about__quote {
     margin: 0 auto;
-    font-size: 6rem;
-    width: 250rem;
+    font-size: 5.5rem;
+    width: 255rem;
   }
 }
 @media only screen and (max-width: 767px) {
   .about__quote-text {
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 1rem 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -265,17 +265,22 @@
     margin: 0 0 4rem 0;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .about__quote-text {
+    width: 165rem;
+  }
+}
 .about__quote-author {
   margin: 0;
 }
 @media only screen and (min-width: 768px) {
   .about__quote-author {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .about__quote-author {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 .about__band {
@@ -296,20 +301,23 @@
   .about__band {
     margin: 0 auto;
     font-size: 6rem;
-    width: 250rem;
+    width: 255rem;
   }
+}
+.about__band-title {
+  color: #000000;
 }
 @media only screen and (max-width: 767px) {
   .about__band-title {
     margin: 6rem 0 4rem 0;
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 5.5rem;
+    font-weight: 400;
   }
 }
 @media only screen and (min-width: 768px) {
   .about__band-title {
     margin: 12rem 0 9rem 0;
-    font-size: 8rem;
+    font-size: 8.5rem;
     font-weight: 600;
   }
 }
@@ -320,9 +328,14 @@
     font-weight: 600;
   }
 }
+@media only screen and (max-width: 767px) {
+  .about__band-div {
+    font-size: 5rem;
+  }
+}
 @media only screen and (min-width: 768px) {
   .about__band-div {
-    font-size: 6rem;
+    font-size: 5rem;
     display: flex;
   }
 }
@@ -371,14 +384,13 @@
     max-width: 340rem;
   }
 }
-
 .gallery__title {
   color: #323232;
 }
 @media only screen and (max-width: 767px) {
   .gallery__title {
     margin: 6rem 0 4rem 0;
-    font-size: 8rem;
+    font-size: 9rem;
     font-weight: 600;
     align-self: flex-start;
   }
@@ -386,17 +398,16 @@
 @media only screen and (min-width: 768px) {
   .gallery__title {
     margin: 12rem 0 9rem 0;
-    font-size: 14rem;
+    font-size: 12.5rem;
     font-weight: 600;
   }
 }
 @media only screen and (min-width: 1280px) {
   .gallery__title {
     margin: 12rem 0 9rem 0;
-    font-size: 11rem;
+    font-size: 10rem;
   }
 }
-
 .gallery__display {
   display: flex;
 }
@@ -410,31 +421,248 @@
   .gallery__display {
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .gallery__display {
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .gallery__photo {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .gallery__photo {
-    width: 32%;
-    margin-bottom: 1.9%;
+    width: 31%;
+    margin-bottom: 3.5%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gallery__photo {
+    width: 31.8%;
+    margin-bottom: 2.5%;
   }
 }
 
-.footer {
+.footer-container {
   background-color: #323232;
-  height: 20vh;
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    margin: 0 4rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin: 0 12rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer {
+    margin: 0 auto;
+    padding: 0 30rem 0 30rem;
+    max-width: 340rem;
+  }
+}
+.footer__main {
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__main {
+    margin-top: 12rem;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__socials-title {
+    margin: 6rem 0 4rem 0;
+    font-size: 9.5rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__socials-title {
+    margin: 0 0 9rem 0;
+    font-size: 12.5rem;
+    font-weight: 600;
+    width: 31%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__socials-title {
+    margin: 0 0 9rem 0;
+    font-size: 9rem;
+    font-weight: 600;
+    width: 31%;
+    min-width: 72rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__socials-links {
+    margin: 0 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__socials-links {
+    margin-top: 4rem;
+    margin-left: 3%;
+    width: 31%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__socials-links {
+    margin-top: 4rem;
+    margin-left: -14rem;
+    width: 31%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__socials-link {
+    margin-right: 10rem;
+    width: 9rem;
+    height: 9rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__socials-link {
+    margin-right: 8rem;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.footer__logo a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+@media only screen and (max-width: 767px) {
+  .footer__logo {
+    font-size: 9rem;
+    margin: 3rem 0rem 2rem 0rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__logo {
+    min-width: 31%;
+    width: 31%;
+    font-size: 9rem;
+    margin: 3rem 0rem 2rem 0rem;
+    padding-left: 40rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__logo {
+    width: 31%;
+    font-size: 6.5rem;
+    margin: 3rem 0rem 2rem 0rem;
+    padding-left: 65rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__contact {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    font-size: 5rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__contact {
+    margin-top: 2rem;
+    width: 70%;
+    display: flex;
+    font-size: 3.5rem;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__contact-card {
+    font-size: 5rem;
+    margin-bottom: 9rem;
+  }
+}
+.footer__contact-name {
+  font-weight: 600;
+}
+.footer__contact-name p {
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .footer__contact-name {
+    margin-bottom: 6rem;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__contact-name {
+    margin-bottom: 8rem;
+    line-height: 1.3;
+  }
+}
+.footer__contact-address p {
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .footer__contact-address {
+    margin-bottom: 6rem;
+    line-height: 1.3;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__contact-address {
+    margin-bottom: 8rem;
+    line-height: 1.3;
+  }
+}
+.footer__contact-email a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .footer__contact-email {
+    line-height: 1.3;
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__contact-email {
+    margin-bottom: 16rem;
+    line-height: 1.3;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__copy {
+    font-size: 4rem;
+    margin-bottom: 8rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__copy {
+    font-size: 4.5rem;
+    margin-bottom: 12rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__copy {
+    font-size: 3.5rem;
+    margin-bottom: 12rem;
+  }
 }
 
 html,

@@ -34,8 +34,8 @@
     font-weight: 400;
 
     @include bp.mobile {
-      font-size: 7rem;
-      padding: 3rem 4rem 2rem 4rem;
+      font-size: 9rem;
+      padding: 3rem 4rem 3rem 4rem;
     }
 
     @include bp.tablet {
@@ -66,13 +66,13 @@
     text-align: center;
 
     @include bp.mobile {
-      font-size: 4rem;
-      padding-bottom: 3rem;
+      font-size: 4.5rem;
+      padding-bottom: 4rem;
       width: 50vw;
     }
 
     @include bp.tablet {
-      font-size: 5rem;
+      font-size: 4.5rem;
       margin-right: 16rem;
     }
 
