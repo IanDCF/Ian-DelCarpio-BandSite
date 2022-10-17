@@ -18,7 +18,7 @@
   }
 
   @include bp.tablet {
-    margin: 0 12rem;
+    margin: 0 14rem;
   }
 
   @include bp.desktop {
@@ -38,7 +38,7 @@
 
     @include bp.tablet {
       margin: 12rem 0 9rem 0;
-      font-size: 12.5rem;
+      font-size: 14rem;
       font-weight: 600;
     }
 
@@ -67,6 +67,11 @@
   }
 
   &__photo {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+
     @include bp.mobile {
       width: 100%;
       margin-bottom: 4.5rem;

@@ -3,12 +3,16 @@
 @use "../colors" as color;
 
 .hero {
-  background-image: url("../../../assets/images/hero-bio.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(128, 128, 128, 0.5),
+      rgba(128, 128, 128, 0.5)
+    ),
+    url("../../../assets/images/hero-bio.jpg");
   background-position: center;
   background-size: cover;
   height: 60vw;
-  // Opacity not working
-  opacity: rgba(50%, 50%, 50%, 50%);
+  opacity: rgba(128, 128, 128, 0.5);
   display: flex;
   align-items: center;
 
@@ -27,8 +31,8 @@
     }
 
     @include bp.tablet {
-      font-size: 20rem;
-      margin-left: 12rem;
+      font-size: 23rem;
+      margin-left: 14rem;
     }
 
     @include bp.desktop {

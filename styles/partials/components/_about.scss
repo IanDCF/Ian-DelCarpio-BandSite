@@ -18,7 +18,7 @@
   }
 
   @include bp.tablet {
-    margin: 0 9rem 0 9rem;
+    margin: 0 14rem;
   }
 
   @include bp.desktop {
@@ -35,8 +35,8 @@
     }
 
     @include bp.tablet {
-      margin: 12rem 0 9rem 3rem;
-      font-size: 12rem;
+      margin: 12rem 0 9rem 0;
+      font-size: 14rem;
       font-weight: 600;
       align-self: flex-start;
     }
@@ -58,7 +58,7 @@
     }
 
     @include bp.tablet {
-      padding: 0 20rem;
+      padding: 0 22rem;
       margin: 0 0 9rem 0;
     }
 
@@ -79,8 +79,8 @@
     }
 
     @include bp.tablet {
-      padding: 0 20rem;
-      font-size: 7.5rem;
+      padding: 0 22rem;
+      font-size: 8rem;
       font-weight: 600;
       line-height: 1.5;
     }
@@ -110,7 +110,7 @@
     margin: 0;
 
     @include bp.tablet {
-      font-size: 5.5rem;
+      font-size: 6rem;
     }
 
     @include bp.desktop {
@@ -126,7 +126,7 @@
     }
 
     @include bp.tablet {
-      padding: 0 20rem;
+      padding: 0 22rem;
       font-size: 8rem;
     }
 
@@ -148,7 +148,7 @@
 
     @include bp.tablet {
       margin: 12rem 0 9rem 0;
-      font-size: 8.5rem;
+      font-size: 9rem;
       font-weight: 600;
     }
 
@@ -164,7 +164,7 @@
       font-size: 5rem;
     }
     @include bp.tablet {
-      font-size: 5rem;
+      font-size: 5.5rem;
       display: flex;
     }
 
@@ -176,7 +176,7 @@
 
   &__band-text {
     @include bp.tablet {
-      margin: 0 8rem 9rem 0;
+      margin: 0 10rem 12rem 0;
     }
 
     @include bp.desktop {
