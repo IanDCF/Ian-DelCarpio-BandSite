@@ -6,7 +6,7 @@
   margin: 0;
   display: flex;
   align-items: center;
-  background-color: color.$mercury;
+  background-color: color.$alabaster;
 }
 
 .gallery {
@@ -18,7 +18,7 @@
   }
 
   @include bp.tablet {
-    margin: 0 14rem;
+    margin: 0 9rem;
   }
 
   @include bp.desktop {
@@ -30,15 +30,15 @@
   &__title {
     color: color.$bandsite-black;
     @include bp.mobile {
-      margin: 6rem 0 4rem 0;
+      margin: 5rem 0 3rem 0;
       font-size: 6rem;
       font-weight: 600;
       align-self: flex-start;
     }
 
     @include bp.tablet {
-      margin: 12rem 0 9rem 0;
-      font-size: 14rem;
+      margin: 10rem 0 6rem 0;
+      font-size: 9.3rem;
       font-weight: 600;
     }
 
@@ -58,7 +58,7 @@
     @include bp.tablet {
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
 
     @include bp.desktop {

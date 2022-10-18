@@ -17,8 +17,8 @@
 
   @include bp.tablet {
     justify-content: flex-start;
-    line-height: 24rem;
-    margin: 0 14rem;
+    line-height: 16rem;
+    margin: 0 9rem;
   }
 
   @include bp.desktop {
@@ -34,9 +34,15 @@
       padding: 4rem 4rem 3rem 4rem;
     }
 
+    a {
+      @include bp.tablet {
+        display: flex;
+        align-items: center;
+      }
+    }
+
     @include bp.tablet {
-      font-size: 8.5rem;
-      margin-right: 22rem;
+      margin-right: 18rem;
     }
 
     @include bp.desktop {
@@ -68,8 +74,8 @@
     }
 
     @include bp.tablet {
-      font-size: 5rem;
-      margin-right: 18rem;
+      font-size: 3.5rem;
+      margin-right: 12rem;
     }
 
     @include bp.desktop {
