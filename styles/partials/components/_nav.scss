@@ -30,15 +30,8 @@
   }
 
   &__logo {
-    a {
-      text-decoration: none;
-      color: color.$white;
-      font-weight: 400;
-    }
-
     @include bp.mobile {
-      font-size: 9rem;
-      padding: 3rem 4rem 3rem 4rem;
+      padding: 4rem 4rem 3rem 4rem;
     }
 
     @include bp.tablet {
@@ -69,7 +62,7 @@
     text-align: center;
 
     @include bp.mobile {
-      font-size: 4.5rem;
+      font-size: 3.2rem;
       padding-bottom: 4rem;
       width: 50vw;
     }
@@ -88,6 +81,6 @@
   &__links-item--active {
     color: color.$white;
     font-weight: 600;
-    border-bottom: 1rem solid color.$white;
+    border-bottom: 0.8rem solid color.$white;
   }
 }

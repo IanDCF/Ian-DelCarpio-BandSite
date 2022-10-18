@@ -31,7 +31,7 @@
     color: color.$bandsite-black;
     @include bp.mobile {
       margin: 6rem 0 4rem 0;
-      font-size: 9rem;
+      font-size: 6rem;
       font-weight: 600;
       align-self: flex-start;
     }
@@ -67,9 +67,9 @@
   }
 
   &__photo {
-    opacity: 0.5;
+    filter: grayscale(100%);
     &:hover {
-      opacity: 1;
+      filter: grayscale(0%);
     }
 
     @include bp.mobile {
