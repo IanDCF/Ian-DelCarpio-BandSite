@@ -44,6 +44,22 @@
     }
   }
 
+  &__main-header {
+    @include bp.tablet {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @include bp.desktop {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
   &__socials-title {
     @include bp.mobile {
       margin: 6rem 0 4rem 0;
@@ -52,17 +68,13 @@
     }
 
     @include bp.tablet {
-      margin: 0 3.9% 0 0;
+      margin: 0 4% 0 0;
       font-size: 9rem;
       font-weight: 600;
-      width: 33%;
-      // min-width: 76rem;
     }
 
     @include bp.desktop {
-      font-size: 10rem;
-      width: 20%;
-      min-width: none;
+      margin: 0 7.7% 0 0;
     }
   }
 
@@ -73,13 +85,9 @@
     }
 
     @include bp.tablet {
-      width: 33%;
-      // min-width: 76rem;
     }
 
     @include bp.desktop {
-      width: 20%;
-      min-width: none;
     }
   }
 
@@ -115,14 +123,6 @@
 
     @include bp.tablet {
       width: 33%;
-
-      display: flex;
-      flex-direction: column;
-    }
-
-    @include bp.desktop {
-      width: 33%;
-      font-size: 9rem;
       display: flex;
       flex-direction: column;
     }
@@ -132,19 +132,20 @@
     @include bp.mobile {
       margin-bottom: 4rem;
     }
+
     @include bp.tablet {
       width: 100%;
       margin-top: 9rem;
       display: flex;
       font-size: 3.5rem;
-      justify-content: space-between;
+      // justify-content: flex-start;
     }
 
     @include bp.desktop {
       width: 100%;
-      margin-top: 12rem;
+      margin-top: 9rem;
       display: flex;
-      font-size: 4rem;
+      font-size: 3.5rem;
       justify-content: flex-start;
     }
   }
@@ -153,6 +154,12 @@
     @include bp.mobile {
       font-size: 3.3rem;
       margin-bottom: 3rem;
+    }
+    @include bp.tablet {
+      margin-right: 5%;
+    }
+    @include bp.desktop {
+      margin-right: 7%;
     }
   }
 
@@ -243,7 +250,7 @@
 
     @include bp.desktop {
       font-size: 3.5rem;
-      margin-bottom: 12rem;
+      margin-bottom: 9rem;
     }
   }
 }

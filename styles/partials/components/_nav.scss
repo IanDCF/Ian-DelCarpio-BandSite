@@ -25,15 +25,11 @@
     margin: 0 auto;
     padding: 0 30rem 0 30rem;
     justify-content: flex-start;
-    line-height: 20rem;
+    line-height: 21rem;
     max-width: 340rem;
   }
 
   &__logo {
-    @include bp.mobile {
-      padding: 4rem 4rem 3rem 4rem;
-    }
-
     a {
       @include bp.tablet {
         display: flex;
@@ -41,12 +37,15 @@
       }
     }
 
+    @include bp.mobile {
+      padding: 4rem 4rem 3rem 4rem;
+    }
+
     @include bp.tablet {
       margin-right: 18rem;
     }
 
     @include bp.desktop {
-      font-size: 7rem;
       margin-right: 18rem;
     }
   }
@@ -79,7 +78,7 @@
     }
 
     @include bp.desktop {
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin-right: 8rem;
     }
   }
