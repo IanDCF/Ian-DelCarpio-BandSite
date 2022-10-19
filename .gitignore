@@ -2,4 +2,6 @@
 *.css.map
 
 #Ignore copy deck
-bandsite-copydeck-sprint1.md
+*.md
+
+.DS_Store
