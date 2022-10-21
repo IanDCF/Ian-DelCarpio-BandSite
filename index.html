@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/bio.css" />
+    <script src="./index.js" defer></script>
     <title>BANDSITE</title>
   </head>
   <body>
@@ -136,7 +137,7 @@
           <h2 class="forum__title">Join the Conversation</h2>
           <div class="forum__display">
             <form class="forum__form">
-              <div class="forum-form-dp">
+              <div class="forum__form-dp">
                 <img
                   src="./assets/images/Mohan-muruge.jpg"
                   alt="profile picture"
@@ -144,77 +145,94 @@
               </div>
               <div class="forum__input">
                 <div class="forum__input-name">
-                  <label for="name">NAME</label>
-                  <input id="name" type="text" />
+                  <label for="name" class="forum__input-label">NAME</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="forum__input-name-box"
+                    placeholder="Enter your name"
+                    required
+                  />
                 </div>
                 <div class="forum__input-comment">
-                  <label for="comment">COMMENT</label>
-                  <input id="comment" type="text" />
+                  <label for="comment" class="forum__input-label"
+                    >COMMENT</label
+                  >
+                  <input
+                    id="comment"
+                    name="comment"
+                    type="text"
+                    class="forum__input-comment-box"
+                    placeholder="Add a new comment"
+                    required
+                  />
                 </div>
                 <div class="forum__input-btn">
-                  <button>COMMENT</button>
+                  <button type="submit" class="forum__button">COMMENT</button>
                 </div>
               </div>
             </form>
+            <div class="forum__comments">
+              <!-- <div class="forum__comment">
+                <div class="forum__comment-dp">
+                  <div class="forum__comment-dp-circle"></div>
+                </div>
+                <div class="forum__comment-data">
+                  <div class="forum__name-date">
+                    <p class="forum__name">Connor Walton</p>
+                    <p class="forum__date">02/17/2021</p>
+                  </div>
+                  <div class="forum__comment-text">
+                    <p>
+                      This is art. This is inexplicable magic expressed in the
+                      purest way, everything that makes up this majestic work
+                      deserves reverence. Let us appreciate this for what it is
+                      and what it contains.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-            <div class="forum__comment">
-              <div class="forum__comment-dp">
-                <div class="forum__gray-circle"></div>
-              </div>
-              <div class="forum__comment-data">
-                <div class="forum__name-date">
-                  <p class="forum__name">Connor Walton</p>
-                  <p class="forum__date">02/17/2021</p>
+              <div class="forum__comment">
+                <div class="forum__comment-dp">
+                  <div class="forum__comment-dp-circle"></div>
                 </div>
-                <div class="forum__comment-text">
-                  <p>
-                    This is art. This is inexplicable magic expressed in the
-                    purest way, everything that makes up this majestic work
-                    deserves reverence. Let us appreciate this for what it is
-                    and what it contains.
-                  </p>
+                <div class="forum__comment-data">
+                  <div class="forum__name-date">
+                    <p class="forum__name">Connor Walton</p>
+                    <p class="forum__date">02/17/2021</p>
+                  </div>
+                  <div class="forum__comment-text">
+                    <p>
+                      This is art. This is inexplicable magic expressed in the
+                      purest way, everything that makes up this majestic work
+                      deserves reverence. Let us appreciate this for what it is
+                      and what it contains.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="forum__comment">
-              <div class="forum__comment-dp">
-                <div class="forum__gray-circle"></div>
-              </div>
-              <div class="forum__comment-data">
-                <div class="forum__name-date">
-                  <p class="forum__name">Connor Walton</p>
-                  <p class="forum__date">02/17/2021</p>
+              <div class="forum__comment">
+                <div class="forum__comment-dp">
+                  <div class="forum__comment-dp-circle"></div>
                 </div>
-                <div class="forum__comment-text">
-                  <p>
-                    This is art. This is inexplicable magic expressed in the
-                    purest way, everything that makes up this majestic work
-                    deserves reverence. Let us appreciate this for what it is
-                    and what it contains.
-                  </p>
+                <div class="forum__comment-data">
+                  <div class="forum__name-date">
+                    <p class="forum__name">Connor Walton</p>
+                    <p class="forum__date">02/17/2021</p>
+                  </div>
+                  <div class="forum__comment-text">
+                    <p>
+                      This is art. This is inexplicable magic expressed in the
+                      purest way, everything that makes up this majestic work
+                      deserves reverence. Let us appreciate this for what it is
+                      and what it contains.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="forum__comment">
-              <div class="forum__comment-dp">
-                <div class="forum__gray-circle"></div>
-              </div>
-              <div class="forum__comment-data">
-                <div class="forum__name-date">
-                  <p class="forum__name">Connor Walton</p>
-                  <p class="forum__date">02/17/2021</p>
-                </div>
-                <div class="forum__comment-text">
-                  <p>
-                    This is art. This is inexplicable magic expressed in the
-                    purest way, everything that makes up this majestic work
-                    deserves reverence. Let us appreciate this for what it is
-                    and what it contains.
-                  </p>
-                </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
