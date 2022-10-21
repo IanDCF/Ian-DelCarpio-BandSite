@@ -63,8 +63,11 @@
   }
 
   &__links-item {
-    color: color.$mercury;
     text-align: center;
+    a {
+      text-decoration: none;
+      color: color.$mercury;
+    }
 
     @include bp.mobile {
       font-size: 3.2rem;
