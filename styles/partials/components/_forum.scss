@@ -35,7 +35,6 @@
       margin: 5rem 0 3rem 0;
       font-size: 6rem;
       font-weight: 600;
-      align-self: flex-start;
     }
 
     @include bp.tablet {
@@ -45,7 +44,7 @@
     }
 
     @include bp.desktop {
-      margin: 12rem 0 9rem 0;
+      margin: 12rem 0 6rem 0;
       font-size: 9.5rem;
     }
   }
@@ -62,6 +61,10 @@
 
     @include bp.tablet {
       padding: 0 15rem;
+    }
+
+    @include bp.desktop {
+      padding: 0 68rem;
     }
   }
 
@@ -94,6 +97,10 @@
       padding-right: 1rem;
     }
 
+    @include bp.desktop {
+      padding-left: 1rem;
+    }
+
     // center image responsively
     img {
       border-radius: 50%;
@@ -107,6 +114,11 @@
         margin-top: 8.1rem;
         width: 12rem;
         height: 12rem;
+      }
+
+      @include bp.desktop {
+        width: 13rem;
+        height: 13rem;
       }
     }
   }
@@ -123,6 +135,10 @@
     @include bp.tablet {
       width: 89.5%;
       margin-top: 3em;
+    }
+
+    @include bp.desktop {
+      width: 87%;
     }
   }
 
@@ -246,6 +262,10 @@
       width: 9%;
       padding-right: 1rem;
     }
+
+    @include bp.desktop {
+      padding-left: 1rem;
+    }
     &-circle {
       background-color: color.$mercury;
       border-radius: 50%;
@@ -256,9 +276,8 @@
         height: 9.5rem;
       }
       @include bp.tablet {
-        margin-top: 4rem;
-        width: 12rem;
-        height: 12rem;
+        width: 13rem;
+        height: 13rem;
       }
     }
   }
@@ -274,6 +293,10 @@
 
     @include bp.tablet {
       width: 89.5%;
+    }
+
+    @include bp.desktop {
+      width: 87%;
     }
   }
 

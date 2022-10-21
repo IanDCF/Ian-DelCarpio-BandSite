@@ -497,7 +497,6 @@
     margin: 5rem 0 3rem 0;
     font-size: 6rem;
     font-weight: 600;
-    align-self: flex-start;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -509,7 +508,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .forum__title {
-    margin: 12rem 0 9rem 0;
+    margin: 12rem 0 6rem 0;
     font-size: 9.5rem;
   }
 }
@@ -528,6 +527,11 @@
 @media only screen and (min-width: 768px) {
   .forum__display {
     padding: 0 15rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .forum__display {
+    padding: 0 68rem;
   }
 }
 .forum__form {
@@ -562,6 +566,11 @@
     padding-right: 1rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .forum__form-dp {
+    padding-left: 1rem;
+  }
+}
 .forum__form-dp img {
   border-radius: 50%;
 }
@@ -579,6 +588,12 @@
     height: 12rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .forum__form-dp img {
+    width: 13rem;
+    height: 13rem;
+  }
+}
 .forum__input {
   display: flex;
   flex-direction: column;
@@ -593,6 +608,11 @@
   .forum__input {
     width: 89.5%;
     margin-top: 3em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .forum__input {
+    width: 87%;
   }
 }
 .forum__input-name {
@@ -724,6 +744,11 @@
     padding-right: 1rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .forum__comment-dp {
+    padding-left: 1rem;
+  }
+}
 .forum__comment-dp-circle {
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -738,9 +763,8 @@
 }
 @media only screen and (min-width: 768px) {
   .forum__comment-dp-circle {
-    margin-top: 4rem;
-    width: 12rem;
-    height: 12rem;
+    width: 13rem;
+    height: 13rem;
   }
 }
 .forum__comment-data {
@@ -757,6 +781,11 @@
 @media only screen and (min-width: 768px) {
   .forum__comment-data {
     width: 89.5%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .forum__comment-data {
+    width: 87%;
   }
 }
 .forum__name-date {
