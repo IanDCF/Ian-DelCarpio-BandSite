@@ -81,23 +81,24 @@ const render = () => {
 render();
 
 // HANDLE FORM ___________________________________________________________
-let commentButton = document.querySelector(".forum__button");
+let form = document.querySelector(".forum__form");
 
-commentButton.addEventListener("click", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let id = uniqueID();
-  let name = document.querySelector(".forum__input-name-box").value;
+  let name = event.target.name.value;
   let date = new Date().toLocaleDateString();
-  let comment = document.querySelector(".forum__input-comment-box").value;
+  let comment = event.target.comment.value;
+
   let newComment = { id: id, name: name, date: date, comment: comment };
 
   if (name !== "" && comment !== "") {
     comments.unshift(newComment);
     render();
-    name = document.querySelector(".forum__input-name-box").value = "";
-    comment = document.querySelector(".forum__input-comment-box").value = "";
+    name = event.target.name.value = "";
+    comment = event.target.comment.value = "";
   } else {
-    alert("Both input fields are required");
+    alert("Both, name and input, fields are required");
   }
 });
