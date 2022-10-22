@@ -1,0 +1,108 @@
+@use "../fonts" as font;
+@use "../breakpoints" as bp;
+@use "../colors" as color;
+
+.hero-container {
+  background: linear-gradient(
+      to bottom,
+      rgba(50, 50, 50, 0.47),
+      rgba(52, 52, 52, 0.295)
+    ),
+    url("../../../assets/images/hero-shows.jpg");
+  background-position: center;
+  background-size: cover;
+
+  opacity: rgba(128, 128, 128, 0.5);
+  display: flex;
+
+  @include bp.mobile {
+    height: 90vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include bp.tablet {
+    height: 62vw;
+  }
+
+  @include bp.desktop {
+    justify-content: center;
+    height: 48vw;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @include bp.mobile {
+    margin: 0 4rem;
+    padding: 8.5rem 0;
+  }
+
+  @include bp.tablet {
+    margin: 0 9rem;
+    padding: 14rem 0;
+  }
+
+  @include bp.desktop {
+    margin: 0 auto;
+    padding: 0 30rem 0 30rem;
+    max-width: 340rem;
+  }
+
+  &__album {
+    margin: 0;
+    color: color.$white;
+
+    @include bp.mobile {
+      font-weight: 400;
+      // font-size: 3.5rem;
+      font-size: 4.5vw;
+      margin-bottom: 5rem;
+    }
+
+    @include bp.tablet {
+      font-weight: 600;
+      font-size: 3.2vw;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: color.$white;
+    font-weight: 600;
+
+    @include bp.mobile {
+      // font-size: 6rem;
+      font-size: 7.9vw;
+    }
+
+    @include bp.tablet {
+      // font-size: 14.5rem;
+      font-size: 7.9vw;
+    }
+
+    @include bp.desktop {
+      margin: 0;
+      font-size: 16rem;
+      width: 340rem;
+    }
+  }
+
+  &__iframe {
+    margin: 0;
+    border-radius: 5px;
+    @include bp.mobile {
+      height: 30vw;
+    }
+    @include bp.tablet {
+      height: 18vw;
+      // width: 105rem;
+      width: 55vw;
+    }
+  }
+}

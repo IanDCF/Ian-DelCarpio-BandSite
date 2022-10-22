@@ -4,18 +4,3 @@
 @use "./partials/components/gallery";
 @use "./partials/components/forum";
 @use "./partials/components/footer";
-
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-}

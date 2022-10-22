@@ -1,18 +1,4 @@
 @use "./partials/components/nav";
-@use "./partials/components/hero";
+@use "./partials/components/hero-shows";
+@use "./partials/components/_shows-info";
 @use "./partials/components/footer";
-
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-}
