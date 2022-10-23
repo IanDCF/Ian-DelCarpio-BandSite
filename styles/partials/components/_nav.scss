@@ -63,8 +63,12 @@
   }
 
   &__links-item {
-    color: color.$mercury;
     text-align: center;
+
+    a {
+      text-decoration: none;
+      color: color.$mercury;
+    }
 
     @include bp.mobile {
       font-size: 3.2rem;
@@ -83,6 +87,8 @@
     }
   }
 
+  &__links-item:hover,
+  &__links-item:focus,
   &__links-item--active {
     color: color.$white;
     font-weight: 600;

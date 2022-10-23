@@ -1,7 +1,5 @@
 #Ignore scss map files
 *.css.map
 
-#Ignore copy deck
-*.md
 
 .DS_Store

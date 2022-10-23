@@ -1,11 +1,6 @@
 @use "./partials/fonts";
 @use "./partials/breakpoints";
 @use "./partials/colors";
-@use "./partials/components/nav";
-@use "./partials/components/hero";
-@use "./partials/components/about";
-@use "./partials/components/gallery";
-@use "./partials/components/footer";
 
 html,
 body {
@@ -22,4 +17,19 @@ body {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
 }
