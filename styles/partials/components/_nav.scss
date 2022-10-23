@@ -64,6 +64,7 @@
 
   &__links-item {
     text-align: center;
+
     a {
       text-decoration: none;
       color: color.$mercury;
@@ -86,6 +87,8 @@
     }
   }
 
+  &__links-item:hover,
+  &__links-item:focus,
   &__links-item--active {
     color: color.$white;
     font-weight: 600;

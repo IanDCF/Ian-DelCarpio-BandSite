@@ -217,6 +217,7 @@
       height: 10rem;
       color: color.$white;
       font-size: 4rem;
+      cursor: pointer;
 
       @include bp.mobile {
         width: 100%;
