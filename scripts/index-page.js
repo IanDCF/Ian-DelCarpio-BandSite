@@ -26,13 +26,8 @@ const comments = [
 ];
 
 // RENDER COMMENTS __________________________________________
-const renderComment = (taskObj) => {
-  let forumComments = document.querySelector(".forum__comments");
-
-  let forumComment = document.createElement("div");
-  forumComment.classList.add("forum__comment");
-  forumComment.setAttribute("id", taskObj.id);
-  forumComments.appendChild(forumComment);
+const renderDP = (id) => {
+  let forumComment = document.getElementById(id);
 
   let forumCommentDP = document.createElement("div");
   forumCommentDP.classList.add("forum__comment-dp");
@@ -41,6 +36,10 @@ const renderComment = (taskObj) => {
   let forumCommentDPCircle = document.createElement("div");
   forumCommentDPCircle.classList.add("forum__comment-dp-circle");
   forumCommentDP.appendChild(forumCommentDPCircle);
+};
+
+const renderCommentData = (id, name, date, comment) => {
+  let forumComment = document.getElementById(id);
 
   let forumCommentData = document.createElement("div");
   forumCommentData.classList.add("forum__comment-data");
@@ -52,12 +51,12 @@ const renderComment = (taskObj) => {
 
   let forumName = document.createElement("p");
   forumName.classList.add("forum__name");
-  forumName.innerText = taskObj.name;
+  forumName.innerText = name;
   forumCommentNameDate.appendChild(forumName);
 
   let forumDate = document.createElement("p");
   forumDate.classList.add("forum__date");
-  forumDate.innerText = taskObj.date;
+  forumDate.innerText = date;
   forumCommentNameDate.appendChild(forumDate);
 
   let forumCommentText = document.createElement("div");
@@ -65,9 +64,65 @@ const renderComment = (taskObj) => {
   forumCommentData.appendChild(forumCommentText);
 
   let forumCommentP = document.createElement("p");
-  forumCommentP.innerText = taskObj.comment;
+  forumCommentP.innerText = comment;
   forumCommentText.appendChild(forumCommentP);
 };
+
+const renderComment = (taskObj) => {
+  let forumComments = document.querySelector(".forum__comments");
+
+  let forumComment = document.createElement("div");
+  forumComment.classList.add("forum__comment");
+  forumComment.setAttribute("id", taskObj.id);
+  forumComments.appendChild(forumComment);
+
+  renderDP(taskObj.id);
+  renderCommentData(taskObj.id, taskObj.name, taskObj.date, taskObj.comment);
+};
+
+// // RENDER COMMENTS __________________________________________
+// const renderComment = (taskObj) => {
+//   let forumComments = document.querySelector(".forum__comments");
+
+//   let forumComment = document.createElement("div");
+//   forumComment.classList.add("forum__comment");
+//   forumComment.setAttribute("id", taskObj.id);
+//   forumComments.appendChild(forumComment);
+
+//   let forumCommentDP = document.createElement("div");
+//   forumCommentDP.classList.add("forum__comment-dp");
+//   forumComment.appendChild(forumCommentDP);
+
+//   let forumCommentDPCircle = document.createElement("div");
+//   forumCommentDPCircle.classList.add("forum__comment-dp-circle");
+//   forumCommentDP.appendChild(forumCommentDPCircle);
+
+//   let forumCommentData = document.createElement("div");
+//   forumCommentData.classList.add("forum__comment-data");
+//   forumComment.appendChild(forumCommentData);
+
+//   let forumCommentNameDate = document.createElement("div");
+//   forumCommentNameDate.classList.add("forum__name-date");
+//   forumCommentData.appendChild(forumCommentNameDate);
+
+//   let forumName = document.createElement("p");
+//   forumName.classList.add("forum__name");
+//   forumName.innerText = taskObj.name;
+//   forumCommentNameDate.appendChild(forumName);
+
+//   let forumDate = document.createElement("p");
+//   forumDate.classList.add("forum__date");
+//   forumDate.innerText = taskObj.date;
+//   forumCommentNameDate.appendChild(forumDate);
+
+//   let forumCommentText = document.createElement("div");
+//   forumCommentText.classList.add("forum__comment-text");
+//   forumCommentData.appendChild(forumCommentText);
+
+//   let forumCommentP = document.createElement("p");
+//   forumCommentP.innerText = taskObj.comment;
+//   forumCommentText.appendChild(forumCommentP);
+// };
 
 const render = () => {
   const commentsList = document.querySelector(".forum__comments");
