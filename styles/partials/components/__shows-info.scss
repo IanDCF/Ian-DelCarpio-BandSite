@@ -77,18 +77,22 @@
   &__list-item {
     display: flex;
     border-bottom: 1.5px solid color.$mercury;
+
     @include bp.mobile {
-      margin-top: 5.5rem;
+      padding-top: 5.5rem;
       height: 50rem;
       flex-direction: column;
       justify-content: space-between;
     }
 
     @include bp.tablet {
-      margin-top: 4rem;
-      padding-bottom: 4rem;
+      padding: 4rem 6rem;
       justify-content: space-between;
     }
+  }
+
+  &__list-item--active {
+    background-color: color.$mercury;
   }
 
   &__info-labels--mod {
@@ -102,6 +106,7 @@
     @include bp.tablet {
       width: 100%;
       margin-bottom: 2rem;
+      padding: 0 6rem;
     }
   }
 

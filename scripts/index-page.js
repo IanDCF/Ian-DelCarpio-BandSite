@@ -68,7 +68,7 @@ const renderCommentData = (id, name, date, comment) => {
   forumCommentText.appendChild(forumCommentP);
 };
 
-const renderComment = (taskObj) => {
+const displayComment = (taskObj) => {
   let forumComments = document.querySelector(".forum__comments");
 
   let forumComment = document.createElement("div");
@@ -129,7 +129,7 @@ const render = () => {
   commentsList.innerHTML = "";
 
   for (let i = 0; i < comments.length; i++) {
-    renderComment(comments[i]);
+    displayComment(comments[i]);
   }
 };
 

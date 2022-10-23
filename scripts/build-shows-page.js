@@ -128,3 +128,17 @@ const render = () => {
 };
 
 render();
+
+// SELECTED SHOWS LIST ITEM FUNCTIONALITY______________
+const listItems = document.querySelectorAll(".shows__list-item");
+
+listItems.forEach((row) => {
+  row.addEventListener("click", (event) => {
+    listItems.forEach((row) => {
+      if (row !== event.currentTarget) {
+        row.classList.remove("shows__list-item--active");
+      }
+    });
+    event.currentTarget.classList.toggle("shows__list-item--active");
+  });
+});
