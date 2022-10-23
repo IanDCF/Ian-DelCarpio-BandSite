@@ -11,59 +11,67 @@
 
 .shows {
   display: flex;
-  flex-direction: column;
 
   @include bp.mobile {
+    flex-direction: column;
     width: 100%;
     margin: 0 4rem;
   }
 
   @include bp.tablet {
+    flex-direction: column;
     width: 100%;
     margin: 0 9rem;
   }
 
   @include bp.desktop {
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0 30rem 0 30rem;
     max-width: 340rem;
   }
+}
 
-  &__title {
-    color: color.$bandsite-black;
+&__title {
+  color: color.$bandsite-black;
 
-    @include bp.mobile {
-      margin: 7rem 0 0.5rem 0;
-      font-size: 6rem;
-      font-weight: 600;
-      align-self: flex-start;
-    }
-
-    @include bp.tablet {
-      margin: 11rem 0 9rem 0;
-      font-size: 9.3rem;
-      font-weight: 600;
-    }
-
-    @include bp.desktop {
-      margin: 12rem 0 9rem 0;
-      font-size: 9.5rem;
-    }
+  @include bp.mobile {
+    margin: 7rem 0 0.5rem 0;
+    font-size: 6rem;
+    font-weight: 600;
+    align-self: flex-start;
   }
 
-  &__list {
-    display: flex;
-    flex-direction: column;
+  @include bp.tablet {
+    margin: 11rem 0 9rem 0;
+    font-size: 9.3rem;
+    font-weight: 600;
+  }
 
-    @include bp.mobile {
-      margin-bottom: 4rem;
-      width: 100%;
-    }
+  @include bp.desktop {
+    margin: 12rem 0 9rem 0;
+    font-size: 9.5rem;
+    width: 62rem;
+  }
+}
 
-    @include bp.tablet {
-      margin-bottom: 9rem;
-      width: 100%;
-    }
+&__list {
+  display: flex;
+  flex-direction: column;
+
+  @include bp.mobile {
+    margin-bottom: 4rem;
+  }
+
+  @include bp.tablet {
+    margin-bottom: 9rem;
+  }
+
+  @include bp.desktop {
+    margin-top: 20rem;
+    margin-bottom: 9rem;
+    width: 200rem;
   }
 
   &__list-item {
