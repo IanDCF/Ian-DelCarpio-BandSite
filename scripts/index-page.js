@@ -1,29 +1,35 @@
+// "api_key": "04e93924-b978-472a-bfd4-98d2161a2f0a"
+
+const apiKey = "04e93924-b978-472a-bfd4-98d2161a2f0a";
+const apiRoute = "comments";
+const apiURL = `https://project-1-api.herokuapp.com/${apiRoute}?api_key=${apiKey}`;
+
 // or use uuid to generate random ids
 const uniqueID = () => Math.random().toString(36).substring(2, 9);
 
-const comments = [
-  {
-    id: uniqueID(),
-    name: "Connor Walton",
-    date: "02/17/2021",
-    comment:
-      "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains",
-  },
-  {
-    id: uniqueID(),
-    name: "Emilie Beach",
-    date: "01/09/2021",
-    comment:
-      "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
-  },
-  {
-    id: uniqueID(),
-    name: "Miles Acosta",
-    date: "12/20/2020",
-    comment:
-      "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
-  },
-];
+// const comments = [
+//   {
+//     id: uniqueID(),
+//     name: "Connor Walton",
+//     date: "02/17/2021",
+//     comment:
+//       "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains",
+//   },
+//   {
+//     id: uniqueID(),
+//     name: "Emilie Beach",
+//     date: "01/09/2021",
+//     comment:
+//       "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
+//   },
+//   {
+//     id: uniqueID(),
+//     name: "Miles Acosta",
+//     date: "12/20/2020",
+//     comment:
+//       "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
+//   },
+// ];
 
 // RENDER COMMENTS __________________________________________
 const renderDP = (id) => {
@@ -56,7 +62,11 @@ const renderCommentData = (id, name, date, comment) => {
 
   let forumDate = document.createElement("p");
   forumDate.classList.add("forum__date");
-  forumDate.innerText = date;
+  let d = new Date(date);
+  let setDate = d.toLocaleDateString("en-US");
+
+  console.log(setDate);
+  forumDate.innerText = setDate;
   forumCommentNameDate.appendChild(forumDate);
 
   let forumCommentText = document.createElement("div");
@@ -77,7 +87,12 @@ const displayComment = (taskObj) => {
   forumComments.appendChild(forumComment);
 
   renderDP(taskObj.id);
-  renderCommentData(taskObj.id, taskObj.name, taskObj.date, taskObj.comment);
+  renderCommentData(
+    taskObj.id,
+    taskObj.name,
+    taskObj.timestamp,
+    taskObj.comment
+  );
 };
 
 // // RENDER COMMENTS __________________________________________
@@ -128,9 +143,22 @@ const render = () => {
   const commentsList = document.querySelector(".forum__comments");
   commentsList.innerHTML = "";
 
-  for (let i = 0; i < comments.length; i++) {
-    displayComment(comments[i]);
-  }
+  const callAPI = axios.get(apiURL);
+
+  callAPI
+    .then((response) => {
+      console.log(response.data);
+      return response.data;
+    })
+    .then((comments) => {
+      comments.forEach((comment) => {
+        displayComment(comment);
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+      return;
+    });
 };
 
 render();
@@ -143,13 +171,29 @@ form.addEventListener("submit", (event) => {
 
   let id = uniqueID();
   let name = event.target.name.value;
-  let date = new Date().toLocaleDateString();
+  // let date = new Date().toLocaleDateString();
+  let date = new Date().getTime();
   let comment = event.target.comment.value;
 
   let newComment = { id: id, name: name, date: date, comment: comment };
 
   if (name !== "" && comment !== "") {
-    comments.unshift(newComment);
+    // comments.unshift(newComment);
+    let apiCall = axios.post(apiURL, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: newComment,
+    });
+
+    apiCall
+      .then((response) => {
+        console.log(response);
+        return response;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
     render();
     name = event.target.name.value = "";
     comment = event.target.comment.value = "";
