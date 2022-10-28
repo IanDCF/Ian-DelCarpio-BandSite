@@ -112,7 +112,7 @@
     }
   }
 
-  &__logo--not-mobile {
+  &__logo-desk-tab {
     a {
       align-self: flex-end;
     }
@@ -138,7 +138,6 @@
       margin-top: 9rem;
       display: flex;
       font-size: 3.5rem;
-      // justify-content: flex-start;
     }
 
     @include bp.desktop {
@@ -217,7 +216,7 @@
     }
   }
 
-  &__logo--mobile {
+  &__logo-mobile {
     a {
       text-decoration: none;
       color: color.$white;
