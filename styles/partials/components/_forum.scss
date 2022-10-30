@@ -1,4 +1,4 @@
-@use "../fonts" as font;
+@use "../fonts" as *;
 @use "../breakpoints" as bp;
 @use "../colors" as color;
 
@@ -102,7 +102,6 @@
       padding-left: 1rem;
     }
 
-    // center image responsively
     img {
       border-radius: 50%;
 
@@ -149,9 +148,29 @@
     flex-direction: column;
 
     &-box {
+      &::placeholder {
+        font-family: "Avenir";
+        font-weight: 400;
+        color: color.$bandsite-black;
+      }
+
       border: 1.3px solid color.$mercury;
       background-color: color.$alabaster;
       border-radius: 4px;
+
+      &:focus {
+        outline: none !important;
+        border: 1.3px solid color.$bandsite-black;
+      }
+
+      &--error {
+        outline: none !important;
+        border: 1.3px solid color.$red;
+        &:focus {
+          outline: none !important;
+          border: 1.3px solid color.$red;
+        }
+      }
 
       @include bp.mobile {
         height: 8.5rem;
@@ -172,21 +191,43 @@
     flex-direction: column;
 
     &-box {
-      // align place holder to top of input box
-      // change placeholder color
+      resize: none;
+      &::placeholder {
+        font-family: "Avenir";
+        font-weight: 400;
+        color: color.$bandsite-black;
+      }
+
       border: 1.3px solid color.$mercury;
       background-color: color.$alabaster;
       border-radius: 4px;
+      font-family: "Avenir";
+
+      &:focus {
+        outline: none !important;
+        border: 1.3px solid color.$bandsite-black;
+      }
+
+      &--error {
+        outline: none !important;
+        border: 1.3px solid color.$red;
+        &:focus {
+          outline: none !important;
+          border: 1.3px solid color.$red;
+        }
+      }
 
       @include bp.mobile {
         height: 23rem;
         padding: 2rem;
+        width: 100%;
         font-size: 3rem;
       }
 
       @include bp.tablet {
         height: 22rem;
         padding: 3rem;
+        width: 100%;
         font-size: 3.5rem;
       }
     }
@@ -218,6 +259,10 @@
       color: color.$white;
       font-size: 4rem;
       cursor: pointer;
+
+      &:hover {
+        background-color: color.$bandsite-darkblack;
+      }
 
       @include bp.mobile {
         width: 100%;

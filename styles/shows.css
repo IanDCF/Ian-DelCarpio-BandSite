@@ -91,8 +91,9 @@
   text-align: center;
 }
 .nav__links-item a {
-  text-decoration: none;
   color: #e1e1e1;
+  text-decoration: none;
+  font-weight: 400;
 }
 @media only screen and (max-width: 767px) {
   .nav__links-item {
@@ -113,13 +114,45 @@
     margin-right: 8rem;
   }
 }
-
-.nav__links-item:hover,
-.nav__links-item:focus,
-.nav__links-item--active {
-  color: #ffffff;
-  font-weight: 600;
+.nav__links-item--active,
+.nav__links-item--focus {
+  text-align: center;
   border-bottom: 0.8rem solid #ffffff;
+}
+.nav__links-item--active a,
+.nav__links-item--focus a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+@media only screen and (max-width: 767px) {
+  .nav__links-item--active,
+  .nav__links-item--focus {
+    font-size: 3.2rem;
+    padding-bottom: 4rem;
+    width: 50vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav__links-item--active,
+  .nav__links-item--focus {
+    font-size: 3.5rem;
+    margin-right: 12rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .nav__links-item--active,
+  .nav__links-item--focus {
+    font-size: 3.5rem;
+    margin-right: 8rem;
+  }
+}
+.nav__links-item:hover {
+  border-bottom: 0.8rem solid #ffffff;
+}
+.nav__links-item:hover a {
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .hero-container {
@@ -363,9 +396,13 @@
   display: flex;
   border-bottom: 1.5px solid #e1e1e1;
 }
+.shows__list-item:hover {
+  background-color: #e1e1e1;
+}
+
 @media only screen and (max-width: 767px) {
   .shows__list-item {
-    padding-top: 5.5rem;
+    padding: 5.5rem 2rem 0 2rem;
     height: 50rem;
     flex-direction: column;
     justify-content: space-between;
@@ -486,6 +523,11 @@
   height: 10rem;
   cursor: pointer;
 }
+
+.shows__info-btn button:hover {
+  background-color: #000000;
+}
+
 @media only screen and (max-width: 767px) {
   .shows__info-btn button {
     font-size: 4rem;
@@ -607,16 +649,16 @@
     height: 6rem;
   }
 }
-.footer__logo--not-mobile a {
+.footer__logo-desk-tab a {
   align-self: flex-end;
 }
 @media only screen and (max-width: 767px) {
-  .footer__logo--not-mobile {
+  .footer__logo-desk-tab {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__logo--not-mobile {
+  .footer__logo-desk-tab {
     width: 33%;
     display: flex;
     flex-direction: column;
@@ -711,23 +753,23 @@
     width: 100%;
   }
 }
-.footer__logo--mobile a {
+.footer__logo-mobile a {
   text-decoration: none;
   color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  .footer__logo--mobile {
+  .footer__logo-mobile {
     font-size: 9rem;
     margin: 2rem 0rem 2rem 0rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__logo--mobile {
+  .footer__logo-mobile {
     display: none;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__logo--mobile {
+  .footer__logo-mobile {
     display: none;
   }
 }

@@ -77,9 +77,12 @@
   &__list-item {
     display: flex;
     border-bottom: 1.5px solid color.$mercury;
+    &:hover {
+      background-color: color.$mercury;
+    }
 
     @include bp.mobile {
-      padding-top: 5.5rem;
+      padding: 5.5rem 2rem 0 2rem;
       height: 50rem;
       flex-direction: column;
       justify-content: space-between;
@@ -135,7 +138,6 @@
     @include bp.tablet {
       justify-content: center;
       align-items: center;
-      //   height: 14rem;
     }
 
     &-label {
@@ -192,6 +194,10 @@
       color: color.$white;
       height: 10rem;
       cursor: pointer;
+
+      &:hover {
+        background-color: color.$bandsite-darkblack;
+      }
 
       @include bp.mobile {
         font-size: 4rem;

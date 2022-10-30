@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/shows.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../scripts/build-shows-page.js" defer></script>
     <title>Shows</title>
   </head>
@@ -22,7 +23,7 @@
             <li class="nav__links-item">
               <a href="../index.html">Biography</a>
             </li>
-            <li class="nav__links-item nav__links-item--active">
+            <li class="nav__links-item--active">
               <a href="../pages/shows.html">Shows</a>
             </li>
           </ul>
@@ -54,38 +55,8 @@
               target="_blank"
               style="color: #cccccc; text-decoration: none"
               >Staying Alive</a
-            ></iframe
-          >
-          <!-- <div
-            style="
-              font-size: 10px;
-              color: #cccccc;
-              line-break: anywhere;
-              word-break: normal;
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-              font-weight: 100;
-            "
-          >
-            <a
-              href="https://soundcloud.com/geebeesmusic"
-              title="geebeesmusic"
-              target="_blank"
-              style="color: #cccccc; text-decoration: none"
-              >geebeesmusic</a
             >
-            ·
-            <a
-              href="https://soundcloud.com/geebeesmusic/staying-alive"
-              title="Staying Alive"
-              target="_blank"
-              style="color: #cccccc; text-decoration: none"
-              >Staying Alive</a
-            >
-          </div> -->
+          </iframe>
         </div>
       </section>
     </header>
@@ -100,45 +71,6 @@
               <p class="shows__info-label--mod">LOCATION</p>
               <p class="shows__info-label--mod">HIDDEN</p>
             </div>
-            <!-- COMMENTS DISPLAYED BELOW -->
-
-            <!-- <div class="shows__list-item">
-              <div class="shows__info">
-                <p class="shows__info-label">DATE</p>
-                <p class="shows__info-text-bold">Mon Sept 06 2021</p>
-              </div>
-              <div class="shows__info">
-                <p class="shows__info-label">VENUE</p>
-                <p class="shows__info-text">Ronald Lane</p>
-              </div>
-              <div class="shows__info">
-                <p class="shows__info-label">LOCATION</p>
-                <p class="shows__info-text">San Francisco, CA</p>
-              </div>
-              <div class="shows__info-btn">
-                <button>BUY TICKETS</button>
-              </div>
-            </div>
-
-            <div class="shows__list-item">
-              <div class="shows__info">
-                <p class="shows__info-label">DATE</p>
-                <p class="shows__info-text-bold">Mon Sept 06 2021</p>
-              </div>
-              <div class="shows__info">
-                <p class="shows__info-label">VENUE</p>
-                <p class="shows__info-text">Ronald Lane</p>
-              </div>
-              <div class="shows__info">
-                <p class="shows__info-label">LOCATION</p>
-                <p class="shows__info-text">San Francisco, CA</p>
-              </div>
-              <div class="shows__info-btn">
-                <button>BUY TICKETS</button>
-              </div>
-            </div> -->
-
-            <!-- COMMENTS DISPLAYED ABOVE -->
           </div>
         </div>
       </section>
@@ -172,7 +104,7 @@
                 </div>
               </div>
 
-              <div class="footer__logo--not-mobile">
+              <div class="footer__logo-desk-tab">
                 <a href="../index.html"
                   ><img src="../assets/logos/Logo-bandsite.svg" alt=""
                 /></a>
@@ -227,7 +159,7 @@
               </div>
             </div>
 
-            <div class="footer__logo--mobile">
+            <div class="footer__logo-mobile">
               <a href="../index.html"
                 ><img
                   src="../assets/logos/Logo-bandsite.svg"

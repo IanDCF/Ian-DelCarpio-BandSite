@@ -74,7 +74,6 @@
 
     @include bp.mobile {
       font-weight: 400;
-      // font-size: 3.5rem;
       font-size: 4.5vw;
       margin-bottom: 5rem;
     }
@@ -98,12 +97,10 @@
     font-weight: 600;
 
     @include bp.mobile {
-      // font-size: 6rem;
       font-size: 7.9vw;
     }
 
     @include bp.tablet {
-      // font-size: 14.5rem;
       font-size: 7.9vw;
     }
 
@@ -141,13 +138,11 @@
 
     @include bp.tablet {
       height: 18vw;
-      // width: 105rem;
       width: 55vw;
     }
 
     @include bp.desktop {
       height: 23%;
-      // width: 105rem;
       width: 40%;
     }
   }
