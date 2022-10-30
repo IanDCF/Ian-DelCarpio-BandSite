@@ -158,6 +158,20 @@
       background-color: color.$alabaster;
       border-radius: 4px;
 
+      &:focus {
+        outline: none !important;
+        border: 1.3px solid color.$bandsite-black;
+      }
+
+      &--error {
+        outline: none !important;
+        border: 1.3px solid color.$red;
+        &:focus {
+          outline: none !important;
+          border: 1.3px solid color.$red;
+        }
+      }
+
       @include bp.mobile {
         height: 8.5rem;
         padding: 2rem;
@@ -188,6 +202,20 @@
       background-color: color.$alabaster;
       border-radius: 4px;
       font-family: "Avenir";
+
+      &:focus {
+        outline: none !important;
+        border: 1.3px solid color.$bandsite-black;
+      }
+
+      &--error {
+        outline: none !important;
+        border: 1.3px solid color.$red;
+        &:focus {
+          outline: none !important;
+          border: 1.3px solid color.$red;
+        }
+      }
 
       @include bp.mobile {
         height: 23rem;

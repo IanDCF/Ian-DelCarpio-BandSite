@@ -13,8 +13,8 @@ const renderDate = (id, date) => {
 
   let infoText = document.createElement("p");
   infoText.classList.add("shows__info-text-bold");
-  let d = new Date(date).toLocaleDateString();
-  infoText.innerText = d;
+  let d = new Date(date);
+  infoText.innerText = d.toString().slice(0, 15);
   showsInfo.appendChild(infoText);
 };
 

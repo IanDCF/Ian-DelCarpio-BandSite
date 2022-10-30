@@ -36,7 +36,6 @@ const renderCommentData = (id, name, date, comment) => {
   let d = new Date(date);
   let setDate = d.toLocaleDateString("en-US");
 
-  console.log(setDate);
   forumDate.innerText = setDate;
   forumCommentNameDate.appendChild(forumDate);
 
@@ -74,7 +73,6 @@ const render = () => {
 
   callAPI
     .then((response) => {
-      console.log(response.data);
       return response.data;
     })
     .then((comments) => {
@@ -84,7 +82,7 @@ const render = () => {
     })
     .catch((err) => {
       console.log(err);
-      return;
+      return err;
     });
 };
 
@@ -96,31 +94,44 @@ let form = document.querySelector(".forum__form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  let nameInput = document.querySelector(".forum__input-name-box");
+  let commentInput = document.querySelector(".forum__input-comment-box");
   let name = event.target.name.value;
   let comment = event.target.comment.value;
+
+  if (name === "") {
+    nameInput.classList.add("forum__input-name-box--error");
+    alert("A name is required to submit form.");
+  } else {
+    nameInput.classList.remove("forum__input-name-box--error");
+  }
+
+  if (comment === "") {
+    commentInput.classList.add("forum__input-comment-box--error");
+    alert("Please insert a comment.");
+  } else {
+    commentInput.classList.remove("forum__input-comment-box--error");
+  }
 
   let newComment = {
     name: name,
     comment: comment,
   };
 
-  if (name !== "" && comment !== "") {
-    let apiCall = axios.post(apiURL, newComment);
+  let apiCall = axios.post(apiURL, newComment);
 
+  if (name !== "" && comment !== "") {
     apiCall
       .then((response) => {
-        console.log(response.data);
         return response.data;
       })
       .then((object) => {
         render();
-        name = event.target.name.value = "";
-        comment = event.target.comment.value = "";
+        form.reset();
       })
       .catch((err) => {
         console.log(err);
+        alert("Both, name and input, fields are required");
       });
-  } else {
-    alert("Both, name and input, fields are required");
   }
 });

@@ -673,6 +673,18 @@
   font-weight: 400;
   color: #323232;
 }
+.forum__input-name-box:focus {
+  outline: none !important;
+  border: 1.3px solid #323232;
+}
+.forum__input-name-box--error {
+  outline: none !important;
+  border: 1.3px solid #d22d2d;
+}
+.forum__input-name-box--error:focus {
+  outline: none !important;
+  border: 1.3px solid #d22d2d;
+}
 @media only screen and (max-width: 767px) {
   .forum__input-name-box {
     height: 8.5rem;
@@ -712,6 +724,18 @@
   font-family: "Avenir";
   font-weight: 400;
   color: #323232;
+}
+.forum__input-comment-box:focus {
+  outline: none !important;
+  border: 1.3px solid #323232;
+}
+.forum__input-comment-box--error {
+  outline: none !important;
+  border: 1.3px solid #d22d2d;
+}
+.forum__input-comment-box--error:focus {
+  outline: none !important;
+  border: 1.3px solid #d22d2d;
 }
 @media only screen and (max-width: 767px) {
   .forum__input-comment-box {
